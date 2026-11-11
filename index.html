@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>جمعية عقول للتنمية المهنية - من نحن</title>
+    <title>جمعية عقول للتنمية المهنية - تسجيل متطوع</title>
 </head>
 <body>
 
@@ -18,22 +18,54 @@
         <ul>
             <li><a href="#about">من نحن</a></li>
             <li><a href="#vision">رؤيتنا</a></li>
-            <li><a href="#contact">اتصل بنا</a></li>
+            <li><a href="#register">تسجيل متطوع</a></li>
         </ul>
     </nav>
 
     <!-- المحتوى الرئيسي للموقع -->
     <main>
-        <!-- قسم دلالي مستقل (من نحن) -->
+        <!-- قسم من نحن -->
         <section id="about">
             <h2>من نحن</h2>
             <p>جمعية عقول للتنمية المهنية هي جمعية سعودية غير ربحية رائدة، تسعى لتطوير القدرات المهنية للأفراد وتمكينهم من مواكبة متطلبات سوق العمل المستقبلي عبر برامج تدريبية ومعايير مبتكرة.</p>
         </section>
 
-        <!-- قسم دلالي إضافي (رؤيتنا) -->
+        <!-- قسم الرؤية -->
         <section id="vision">
             <h2>رؤيتنا وهدفنا</h2>
             <p>بناء مجتمع مهني متطور ومستدام يمتلك الكفاءات والمهارات العالية.</p>
+        </section>
+
+        <!-- قسم نموذج تسجيل متطوع (مهمة يوم الثلاثاء) -->
+        <section id="register">
+            <h2>تسجيل متطوع جديد</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="fullname">الاسم الكامل:</label><br>
+                    <input type="text" id="fullname" name="fullname" required placeholder="أدخل اسمك الثلاثي">
+                </div>
+                <br>
+                <div>
+                    <label for="email">البريد الإلكتروني:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="saudioqol@gmail.com">
+                </div>
+                <br>
+                <div>
+                    <label for="phone">رقم الجوال:</label><br>
+                    <input type="tel" id="phone" name="phone" required placeholder="+966552405851">
+                </div>
+                <br>
+                <div>
+                    <label for="field">مجال التطوع المفضل:</label><br>
+                    <select id="field" name="field">
+                        <option value="tech">التطوير التقني والبرمجة</option>
+                        <option value="media">الإعلام والنشر</option>
+                        <option value="training">التدريب والإرشاد المهني</option>
+                    </select>
+                </div>
+                <br>
+                <button type="submit">إرسال التسجيل</button>
+            </form>
         </section>
     </main>
 
