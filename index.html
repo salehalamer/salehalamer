@@ -3,113 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>جمعية عقول للتنمية المهنية - الجداول والوسائط</title>
+    <title>جمعية عقول للتنمية المهنية</title>
+    <!-- ربط ملف التنسيقات الخارجي CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- رأس الصفحة الدلالي -->
+    <!-- رأس الصفحة الهوياتي -->
     <header>
         <h1>جمعية عقول للتنمية المهنية</h1>
         <p>نُمكّن الإنسان… ونطوّر المهن… ونبني المستقبل</p>
     </header>
 
-    <!-- شريط التنقل الدلالي -->
+    <!-- شريط التنقل المتجاوب (Flexbox) -->
     <nav>
-        <ul>
-            <li><a href="#about">من نحن</a></li>
-            <li><a href="#programs">برامج الجمعية</a></li>
-            <li><a href="#register">تسجيل متطوع</a></li>
-        </ul>
+        <a href="#about">من نحن</a>
+        <a href="#programs">برامج الجمعية</a>
+        <a href="#initiatives">المبادرات</a>
+        <a href="#register">تسجيل متطوع</a>
     </nav>
 
-    <!-- المحتوى الرئيسي للموقع -->
+    <!-- المحتوى الرئيسي بتخطيط Grid -->
     <main>
-        <!-- قسم من نحن -->
-        <section id="about">
-            <h2>من نحن</h2>
-            <p>جمعية عقول للتنمية المهنية هي جمعية سعودية غير ربحية رائدة، تسعى لتطوير القدرات المهنية للأفراد وتمكينهم من مواكبة متطلبات سوق العمل المستقبلي عبر برامج تدريبية ومعايير مبتكرة.</p>
-        </section>
+        <!-- القسم الرئيسي الأيمن -->
+        <div>
+            <section id="about">
+                <h2>من نحن</h2>
+                <p>جمعية عقول للتنمية المهنية هي جمعية سعودية غير ربحية رائدة، تسعى لتطوير القدرات المهنية للأفراد وتمكينهم من مواكبة متطلبات سوق العمل المستقبلي عبر برامج تدريبية ومعايير مبتكرة.</p>
+            </section>
 
-        <!-- قسم برامج الجمعية والوسائط (مهمة يوم الأربعاء) -->
-        <section id="programs">
-            <h2>برامج ووسائط الجمعية</h2>
-            <p>تعرف على أبرز برامجنا التدريبية والمعتمدة:</p>
-            
-            <!-- إضافة صورة مع نص بديل مناسب -->
-            <div style="text-align: center; margin-bottom: 20px;">
-                <img src="https://oqol.sa/wp-content/uploads/2024/05/logo.png" alt="شعار جمعية عقول للتنمية المهنية" width="160" style="max-width:100%; height:auto;">
-            </div>
+            <section id="programs" style="margin-top: 20px;">
+                <h2>برامج الجمعية</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>اسم البرنامج</th>
+                            <th>التصنيف</th>
+                            <th>الفئة المستهدفة</th>
+                            <th>الحالة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>المنظمة الرقمية</td>
+                            <td>التحول الرقمي</td>
+                            <td>المهنيون والشركات</td>
+                            <td>نشط</td>
+                        </tr>
+                        <tr>
+                            <td>المهنيون المحترفون</td>
+                            <td>الشهادات المهنية</td>
+                            <td>الخريجون</td>
+                            <td>نشط</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-            <!-- جدول برامج الجمعية -->
-            <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; text-align: center; border-collapse: collapse;">
-                <thead>
-                    <tr style="background-color: #f2f2f2;">
-                        <th>اسم البرنامج</th>
-                        <th>التصنيف</th>
-                        <th>الفئة المستهدفة</th>
-                        <th>الحالة</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>المنظمة الرقمية</td>
-                        <td>التحول الرقمي والذكاء الاصطناعي</td>
-                        <td>المهنيون والشركات</td>
-                        <td>نشط</td>
-                    </tr>
-                    <tr>
-                        <td>المهنيون المحترفون</td>
-                        <td>الشهادات المهنية والمعسكرات</td>
-                        <td>الباحثون عن عمل والخريجون</td>
-                        <td>نشط</td>
-                    </tr>
-                    <tr>
-                        <td>السحابة المهنية</td>
-                        <td>المعايير ومؤشرات الأداء</td>
-                        <td>صناع القرار والمختصون</td>
-                        <td>متاح قريباً</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+            <!-- قسم بطاقات المبادرات المتجاوبة (Flexbox) -->
+            <section id="initiatives" style="margin-top: 20px;">
+                <h2>مبادرات عقول</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <h3>مبادرة الإرشاد المهني</h3>
+                        <p>ربط الكفاءات الوطنية بخبراء الصناعة لتوجيه مسارهم المهني.</p>
+                    </div>
+                    <div class="card">
+                        <h3>معسكرات التقنية</h3>
+                        <p>تأهيل الشباب لبرمجة وتطوير حلول الويب والمستقبل الرقمي.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <!-- قسم نموذج تسجيل متطوع -->
-        <section id="register">
-            <h2>تسجيل متطوع جديد</h2>
-            <form action="#" method="POST">
-                <div>
-                    <label for="fullname">الاسم الكامل:</label><br>
-                    <input type="text" id="fullname" name="fullname" required placeholder="أدخل اسمك الثلاثي">
-                </div>
-                <br>
-                <div>
-                    <label for="email">البريد الإلكتروني:</label><br>
-                    <input type="email" id="email" name="email" required placeholder="saudioqol@gmail.com">
-                </div>
-                <br>
-                <div>
-                    <label for="phone">رقم الجوال:</label><br>
-                    <input type="tel" id="phone" name="phone" required placeholder="+966552405851">
-                </div>
-                <br>
-                <div>
-                    <label for="field">مجال التطوع المفضل:</label><br>
-                    <select id="field" name="field">
-                        <option value="tech">التطوير التقني والبرمجة</option>
-                        <option value="media">الإعلام والنشر</option>
-                        <option value="training">التدريب والإرشاد المهني</option>
-                    </select>
-                </div>
-                <br>
-                <button type="submit">إرسال التسجيل</button>
-            </form>
-        </section>
+        <!-- الشريط الجانبي أو نموذج التسجيل (الأيسر في الشاشات الكبيرة) -->
+        <div>
+            <section id="register">
+                <h2>تسجيل متطوع جديد</h2>
+                <form action="#" method="POST">
+                    <div>
+                        <label for="fullname">الاسم الكامل:</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="أدخل اسمك الثلاثي">
+                    </div>
+                    
+                    <div>
+                        <label for="email">البريد الإلكتروني:</label>
+                        <input type="email" id="email" name="email" required placeholder="example@email.com">
+                    </div>
+                    
+                    <div>
+                        <label for="phone">رقم الجوال:</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+9665xxxxxxxx">
+                    </div>
+                    
+                    <div>
+                        <label for="field">مجال التطوع:</label>
+                        <select id="field" name="field">
+                            <option value="tech">التطوير التقني والبرمجة</option>
+                            <option value="media">الإعلام والنشر</option>
+                            <option value="training">التدريب والإرشاد</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit">إرسال التسجيل</button>
+                </form>
+            </section>
+        </div>
     </main>
 
-    <!-- تذييل الصفحة الدلالي -->
+    <!-- تذييل الصفحة -->
     <footer>
         <p>جميع حقوق الطبع والنشر محفوظة &copy; 2026 جمعية عقول للتنمية المهنية</p>
-        <p>تواصل معنا: saudioqol@gmail.com | هاتف: +966552405851</p>
     </footer>
 
 </body>
